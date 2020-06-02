@@ -1,0 +1,28 @@
+.wrapper{
+  background-color: #808077;
+  border-radius: 5px;
+  font-size:1.5rem;
+  width: 100%;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .nav-link{
+      text-decoration: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: #ece5e5;
+      transition: all .3s;
+
+    }
+    .nav-link:focus:active{
+      color: #729c31;
+    }
+    .nav-link:hover{
+      transform: translateY(-5px);
+    }
+
+  }
+}
+

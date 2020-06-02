@@ -1,0 +1,156 @@
+.main {
+  .titles {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .generalContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+
+
+    .generalTitle {
+      background-color: #e5e1e0;
+      font-family: 'Nothing You Could Do', cursive;
+      font-weight: bolder;
+      width: 99%;
+      text-align: center;
+      padding: 5px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .ingridients {
+      padding: 5px;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px;
+      background-color: #e5e1e0;
+      font-family: 'Nothing You Could Do', cursive;
+      border-radius: 8px;
+
+      .pictureOfDish {
+        width: 50%;
+      }
+
+      h5 {
+        font-family: 'Nothing You Could Do', cursive;
+      }
+    }
+
+
+    @media screen and (max-width: 1200px) {
+      .generalContainer{
+        margin: 0;
+        //padding: 0;
+      }
+      .ingridients {
+        display: flex;
+        flex-direction: column;
+      }
+      .block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        //padding: 0;
+        //margin: 0;
+      }
+
+    }
+
+    .block {
+      background-color: #e5e1e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      margin: 10px;
+      border-radius: 8px;
+
+      .instructions {
+        padding: 5px;
+        margin: 10px;
+        background-color: #e5e1e0;
+        border-radius: 8px;
+        width: 50%;
+
+        h4 {
+          font-family: 'Nothing You Could Do', cursive;
+        }
+      }
+
+      .playerWrapper {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+        margin: auto;
+
+        width: 50%;
+        //height: 48%;
+
+        //position: relative;
+        //padding-bottom: 56.25%;
+        //padding-top: 25%;
+        //height: 0;
+        .reactPlayer {
+          position: absolute;
+          top: 25%;
+          left: 15%;
+          width: 72%;
+          height: 48%;
+          border: 0;
+        }
+      }
+
+
+
+    }
+
+
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .main {
+    .generalContainer {
+      margin: 0;
+      padding: 0;
+    }
+
+    .generalTitle {
+      font-size: 10px;
+      padding: 5px;
+      margin: 10px;
+
+      .title {
+        font-size: 20px;
+      }
+
+    }
+
+    h3 {
+      margin-top: 5px;
+      font-size: 1.5rem;
+    }
+
+    ol li {
+      font-size: 15px;
+    }
+
+    .instructions {
+      font-size: 13px;
+      padding: 0;
+      margin: 0;
+
+    }
+  }
+  .main .generalContainer .block .instructions{
+    width: 100%;
+  }
+
+
+}

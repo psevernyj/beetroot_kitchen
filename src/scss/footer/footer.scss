@@ -1,0 +1,50 @@
+.phantom {
+  display: block;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
+
+  .footerContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.91);
+    color: rgba(242, 242, 242, 0.73);
+    border-radius: 4px;
+    z-index: 100000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+
+
+    .footerInfo {
+      padding: 1rem;
+
+      .footerTitle {
+        font-size: 1rem;
+      }
+
+      .footerCopyright {
+        font-size: 0.9rem;
+      }
+
+    }
+
+    .iconsBar {
+      list-style-type: none;
+      display: flex;
+
+      .iconsItem {
+        padding: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+  }
+
+}
